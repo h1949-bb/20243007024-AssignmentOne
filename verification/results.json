@@ -1,0 +1,8 @@
+[
+  "facilities: correct title/label; scrolling PASS",
+  "events: correct title/label; content fits viewport PASS",
+  "clubs: correct title/label; scrolling PASS",
+  "support: correct title/label; scrolling PASS",
+  "landscape: four buttons in one row PASS",
+  "landscape navigation and selected topic after rotation PASS"
+]
