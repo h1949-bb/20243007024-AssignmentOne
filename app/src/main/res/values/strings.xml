@@ -1,1 +1,15 @@
-<resources><string name="app_name">AssignmentOne</string></resources>
+<resources>
+    <string name="app_name">AssignmentOne</string>
+    <string name="welcome">Welcome to CampusLife - Your Pocket Guide to University of Waikato</string>
+    <string name="facilities">Facilities</string>
+    <string name="events">Events</string>
+    <string name="clubs">Clubs</string>
+    <string name="support">Support</string>
+    <string name="topic_clicked">%1$s clicked</string>
+    <string name="detail_title">Title</string>
+    <string name="detail_content">Content</string>
+    <string-array name="topic_labels">
+        <item>@string/facilities</item><item>@string/events</item>
+        <item>@string/clubs</item><item>@string/support</item>
+    </string-array>
+</resources>
