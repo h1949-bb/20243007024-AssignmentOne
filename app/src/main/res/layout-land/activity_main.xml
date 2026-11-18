@@ -1,31 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
     <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
-        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/img_main_banner" android:scaleType="centerCrop" android:importantForAccessibility="no" />
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/img_main_banner" android:scaleType="centerCrop" android:importantForAccessibility="no" android:foreground="@color/banner_scrim" />
         <TextView android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:text="@string/welcome" android:textSize="40sp" android:textColor="@android:color/white" />
     </FrameLayout>
-    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="vertical"><LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="horizontal"><LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical" android:background="@drawable/button_selector">
-        <ImageButton android:id="@+id/btn_facilities" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="4"
-            android:background="@drawable/button_selector" android:src="@drawable/img_btn_facilities" android:scaleType="fitCenter"
-            android:contentDescription="@string/facilities" android:tag="0" android:onClick="onTopicClick" />
-        <TextView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"
-            android:gravity="center" android:text="@string/facilities" android:textColor="@android:color/white" />
-    </LinearLayout><LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical" android:background="@drawable/button_selector">
-        <ImageButton android:id="@+id/btn_events" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="4"
-            android:background="@drawable/button_selector" android:src="@drawable/img_btn_events" android:scaleType="fitCenter"
-            android:contentDescription="@string/events" android:tag="1" android:onClick="onTopicClick" />
-        <TextView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"
-            android:gravity="center" android:text="@string/events" android:textColor="@android:color/white" />
-    </LinearLayout><LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical" android:background="@drawable/button_selector">
-        <ImageButton android:id="@+id/btn_clubs" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="4"
-            android:background="@drawable/button_selector" android:src="@drawable/img_btn_clubs" android:scaleType="fitCenter"
-            android:contentDescription="@string/clubs" android:tag="2" android:onClick="onTopicClick" />
-        <TextView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"
-            android:gravity="center" android:text="@string/clubs" android:textColor="@android:color/white" />
-    </LinearLayout><LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical" android:background="@drawable/button_selector">
-        <ImageButton android:id="@+id/btn_support" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="4"
-            android:background="@drawable/button_selector" android:src="@drawable/img_btn_support" android:scaleType="fitCenter"
-            android:contentDescription="@string/support" android:tag="3" android:onClick="onTopicClick" />
-        <TextView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"
-            android:gravity="center" android:text="@string/support" android:textColor="@android:color/white" />
-    </LinearLayout></LinearLayout></LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="horizontal" android:baselineAligned="false">
+        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical" android:background="@drawable/button_selector">
+            <ImageButton android:id="@+id/btn_facilities" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="4" android:background="@drawable/button_selector" android:src="@drawable/img_btn_facilities" android:scaleType="fitCenter" android:contentDescription="@string/facilities" android:tag="0" android:onClick="onTopicClick" />
+            <TextView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:gravity="center" android:text="@string/facilities" android:textColor="@android:color/white" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical" android:background="@drawable/button_selector">
+            <ImageButton android:id="@+id/btn_events" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="4" android:background="@drawable/button_selector" android:src="@drawable/img_btn_events" android:scaleType="fitCenter" android:contentDescription="@string/events" android:tag="1" android:onClick="onTopicClick" />
+            <TextView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:gravity="center" android:text="@string/events" android:textColor="@android:color/white" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical" android:background="@drawable/button_selector">
+            <ImageButton android:id="@+id/btn_clubs" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="4" android:background="@drawable/button_selector" android:src="@drawable/img_btn_clubs" android:scaleType="fitCenter" android:contentDescription="@string/clubs" android:tag="2" android:onClick="onTopicClick" />
+            <TextView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:gravity="center" android:text="@string/clubs" android:textColor="@android:color/white" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical" android:background="@drawable/button_selector">
+            <ImageButton android:id="@+id/btn_support" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="4" android:background="@drawable/button_selector" android:src="@drawable/img_btn_support" android:scaleType="fitCenter" android:contentDescription="@string/support" android:tag="3" android:onClick="onTopicClick" />
+            <TextView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:gravity="center" android:text="@string/support" android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>

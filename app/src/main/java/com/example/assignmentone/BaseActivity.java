@@ -1,7 +1,6 @@
 package com.example.assignmentone;
 
 import android.app.Activity;
-import android.os.Bundle;
 import android.view.View;
 
 /** Keeps content inside system bars in both orientations, including edge-to-edge devices. */
