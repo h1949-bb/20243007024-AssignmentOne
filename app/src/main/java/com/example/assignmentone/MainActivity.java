@@ -18,7 +18,9 @@ public class MainActivity extends BaseActivity {
         int topicIndex = Integer.parseInt(view.getTag().toString());
         String label = getResources().getStringArray(R.array.topic_labels)[topicIndex];
         Toast.makeText(this, getString(R.string.topic_clicked, label), Toast.LENGTH_SHORT).show();
-        
+        Intent intent = new Intent(this, DetailActivity.class);
+        intent.putExtra(DetailActivity.EXTRA_TOPIC_INDEX, topicIndex);
+        startActivity(intent);
     }
 
 }
